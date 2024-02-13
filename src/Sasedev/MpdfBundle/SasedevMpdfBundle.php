@@ -3,6 +3,7 @@ namespace Sasedev\MpdfBundle;
 
 use Sasedev\MpdfBundle\DependencyInjection\SasedevMpdfExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 
 /**
  *
@@ -20,7 +21,7 @@ class SasedevMpdfBundle extends Bundle
      * {@inheritdoc}
      * @see \Symfony\Component\HttpKernel\Bundle\Bundle::getContainerExtension()
      */
-    public function getContainerExtension()
+    public function getContainerExtension(): ?ExtensionInterface
     {
 
         return new SasedevMpdfExtension();
