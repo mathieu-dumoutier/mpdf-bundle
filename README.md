@@ -1,7 +1,6 @@
 # Preface alexh-swdev
 
-This is "just" a fork from sasedev/mpdf-bundle. The puporse of this fork is to keep it installable with Symfony up to 6.3 but I will NOT actively 
-maintain it as long as it works for me. Also, I am no "pro" with composer and its versioning stuff. Nevertheless, feel free to use it at your own 
+This is "just" a fork from sasedev/mpdf-bundle. The puporse of this fork is to keep it installable with Symfony up to 6.3 but I will NOT actively maintain it as long as it works for me. Also, I am no "pro" with composer and its versioning stuff. Nevertheless, feel free to use it at your own 
 risk as long as you don't blame me for anything :)
 
 If you choose to use it, adjust your `composer.json`
@@ -10,12 +9,12 @@ If you choose to use it, adjust your `composer.json`
 "repositories": [
 	{
 		"type": "vcs",
-		"url": "https://github.com/alexh-swdev/mpdf-bundle.git"
+		"url": "https://github.com/mathieu-dumoutier/mpdf-bundle.git"
 	}
 ],
 (...)
 "require" : {
-	"sasedev/mpdf-bundle": "dev-master",
+	"mathieu-dumoutier/mpdf-bundle": "dev-master",
 	(...)
 }
 (...)
@@ -31,14 +30,18 @@ This is a Symfony Pdf Factory for use inside a controller to generate a PDF file
 
 ## Installation
 
-### Step 1: Download HiddenEntityTypeBundle using composer
+### Step 1: Download MpdfBundle using composer
+
 ```bash
-$ composer require sasedev/mpdf-bundle
+$ composer require mathieu-dumoutier/mpdf-bundle
 ```
+
 Composer will install the bundle to your project's vendor directory.
 
 ### Step 2: Enable the bundle
+
 Enable the bundle in the config if flex it did´nt do it for you:
+
 ```php
 <?php
 // config/bundles.php
